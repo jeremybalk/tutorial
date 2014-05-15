@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: bc68edd70ab85ac4496c0fb2f9ee83e0
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - SmokeEffect: {fileID: 19800000, guid: 7cd2d61ef84f3384c84f6cd02c354f5c, type: 2}
+  - FireEffect: {fileID: 19800000, guid: dd89c45c5a8b7fc459a7102eac59af4e, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
