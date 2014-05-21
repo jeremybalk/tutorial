@@ -5,11 +5,16 @@
 /// </summary>
 public class GameOverScript : MonoBehaviour
 {
+
+
+
 	void OnGUI()
 	{
 		const int buttonWidth = 120;
 		const int buttonHeight = 60;
-		
+
+	
+
 		if (
 			GUI.Button(
 			// Center in X, 1/3 of the height in Y
@@ -24,7 +29,8 @@ public class GameOverScript : MonoBehaviour
 			)
 		{
 			// Reload the level
-			Application.LoadLevel("Stage1");
+			HealthScript.PlayerScore=0;
+				Application.LoadLevel("Stage1");
 		}
 		
 		if (

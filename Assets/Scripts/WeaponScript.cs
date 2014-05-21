@@ -73,6 +73,7 @@ public class WeaponScript : MonoBehaviour
 			if (shot != null)
 			{
 				shot.isEnemyShot = isEnemy;
+		
 			}
 			
 			// Make the weapon shot always towards it

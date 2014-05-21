@@ -5,16 +5,19 @@
 /// </summary>
 public class HealthScript : MonoBehaviour
 {
+
+
+	public static int PlayerScore = 0;
 	/// <summary>
 	/// Total hitpoints
 	/// </summary>
-	public int hp = 1;
-	
+	public int hp = 3;
+
 	/// <summary>
 	/// Enemy or player?
 	/// </summary>
 	public bool isEnemy = true;
-	
+
 	/// <summary>
 	/// Inflicts damage and check if the object should be destroyed
 	/// </summary>
@@ -33,7 +36,7 @@ public class HealthScript : MonoBehaviour
 
 			// Dead!
 			Destroy(gameObject);
-
+		
 			}
 		}
 
@@ -44,14 +47,17 @@ public class HealthScript : MonoBehaviour
 		ShotScript shot = otherCollider.gameObject.GetComponent<ShotScript>();
 		if (shot != null)
 		{
+
 			// Avoid friendly fire
 			if (shot.isEnemyShot != isEnemy)
 			{
+			
 				Damage(shot.damage);
-				
+			
 				// Destroy the shot
+			
 				Destroy(shot.gameObject); // Remember to always target the game object, otherwise you will just remove the script
-			}
+				}
 		}
 	}
 }
